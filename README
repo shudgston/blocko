@@ -1,0 +1,14 @@
+## Using an external nginx test server
+
+```bash
+docker pull shudgston/nginxternal
+
+docker ps
+
+docker run -d -p 80:80 IMAGE_ID
+
+# Test with
+# curl "http://<docker_ip>/hello"
+# 5 second delay...
+# {"hello": true}
+```
